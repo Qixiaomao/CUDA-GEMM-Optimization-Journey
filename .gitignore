@@ -1,0 +1,15 @@
+# 编译产生的动态链接库
+*.so
+
+# PyTorch C++ Extension 构建的中间垃圾
+build/
+*.egg-info/
+dist/
+
+# Python 缓存文件
+__pycache__/
+*.pyc
+
+# 操作系统自动生成的隐藏文件 (如果你从 Windows 拖文件过来)
+.DS_Store
+Thumbs.db
