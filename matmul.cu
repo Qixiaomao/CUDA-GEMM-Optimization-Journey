@@ -116,7 +116,7 @@ void launch_matmul(torch::Tensor a, torch::Tensor b, torch::Tensor c, int width)
     float* d_b = b.data_ptr<float>();
     float* d_c = c.data_ptr<float>();
 
-    // 点火！启动你写好的 V3 Kernel
+    // 点火！启动已写好的 V3 Kernel
     matmul_v3<<<dimGrid, dimBlock>>>(d_a, d_b, d_c, width);
 }
 
